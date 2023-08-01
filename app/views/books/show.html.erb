@@ -1,0 +1,9 @@
+<div class="content">Title: <%= @book.title %></div>
+
+<div class="content">Body: <%= @book.body %></div>
+
+<div class="back">
+<%=link_to"Edit", edit_book_path(@book.id) %>
+|
+<%=link_to"Back", books_path %>
+</div>
